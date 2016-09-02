@@ -1,0 +1,20 @@
+{
+  "default": {
+    "header": [
+      "<%= webprefix %>bootstrap.min.css",
+      "<%= webprefix %>app.css"
+    ],
+    "footer": [
+      "<%= webprefix %>jquery.min.js",
+      "<%= webprefix %>angular.min.js",
+      "<%= webprefix %>bootstrap.min.js"
+    ]
+  },
+  "<%= urlprefix %>community": {
+    "header": [
+      "<%= webprefix %>bootstrap.min.css",
+      "<%= webprefix %>app.css",
+      "<%= webprefix %>dark.css"      
+    ]    
+  }
+}
