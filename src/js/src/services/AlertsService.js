@@ -1,5 +1,5 @@
 
-angular.module('app.services.alerts', []).factory('AlertsService', ['$rootScope','$log', function($rootScope, $log) {
+angular.module('app.services.alerts', []).factory('AlertsService', ['$rootScope', '$log', function ($rootScope, $log) {
 
   'use strict';
 
@@ -31,7 +31,7 @@ angular.module('app.services.alerts', []).factory('AlertsService', ['$rootScope'
 
     add: function (alert /*, cb */) {
       // broadcast and scope
-      $rootScope.$broadcast('push_down_menu', { "open" : true });
+      $rootScope.$broadcast('push_down_menu', { "open": true });
       this.alerts.push(alert);
       // cb
       if (arguments.length === 3) {
@@ -50,7 +50,7 @@ angular.module('app.services.alerts', []).factory('AlertsService', ['$rootScope'
     remove: function (index) {
       // remove and broadcast
       this.alerts.splice(index, 1);
-      $rootScope.$broadcast('push_down_menu', { "open" : false });
+      $rootScope.$broadcast('push_down_menu', { "open": false });
       // broadcast alert change
       $rootScope.$broadcast('alerts_update', this.alerts);
     }

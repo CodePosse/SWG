@@ -99,13 +99,13 @@ gulp.task('js:development', function () {
     './src/js/src/app.js'
   ];
   stream = gulp.src(_allFiles)
-      .pipe(sourcemaps.init({
-        loadMaps: true
-      }))
-      .pipe(concat('build.js'))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest('./src/js'))
-      .pipe(gulp.dest('./dist/js'));
+    .pipe(sourcemaps.init({
+      loadMaps: true
+    }))
+    .pipe(concat('build.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./src/js'))
+    .pipe(gulp.dest('./dist/js'));
   return stream;
 });
 
@@ -131,8 +131,8 @@ gulp.task('js:templates', function () {
 gulp.task('js:production', function () {
   var stream = gulp.src('./src/js/build.js')
     .pipe(uglify({
-      preserveComments : false,
-      mangle : false
+      preserveComments: false,
+      mangle: false
     }))
     .pipe(rename('build.min.js'))
     .pipe(gulp.dest('./dist/js'));
@@ -147,7 +147,7 @@ gulp.task('images:production', function () {
   var stream = gulp.src('./src/images/**/*.png')
     .pipe(imagemin({
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
+      svgoPlugins: [{ removeViewBox: false }],
       use: [pngquant()]
     }))
     .pipe(gulp.dest('./dist/images/'))
@@ -172,10 +172,10 @@ gulp.task('fonts:production', function () {
  */
 
 gulp.task('less:development', function () {
-  var stream = gulp.src(['./src/less/app/**/*.less','./src/less/main.less'])
+  var stream = gulp.src(['./src/less/app/**/*.less', './src/less/main.less'])
     .pipe(rename('build.css'))
     .pipe(less({
-      compress : false
+      compress: false
     }))
     .pipe(gulp.dest('./src/css'));
   return stream;
@@ -189,7 +189,7 @@ gulp.task('less:development', function () {
 gulp.task('css:production', function () {
   var stream = gulp.src('./src/css/build.css')
     .pipe(minifyCSS({
-      keepSpecialComments : 0
+      keepSpecialComments: 0
     }))
     .pipe(rename('build.min.css'))
     .pipe(gulp.dest('./dist/css'));
@@ -200,11 +200,11 @@ gulp.task('css:production', function () {
  * edit html for .min script/css
  */
 
-gulp.task('html:production', function() {
+gulp.task('html:production', function () {
   var stream = gulp.src('src/index.html')
     .pipe(htmlreplace({
       'css': 'css/build.min.css',
-      'js':  'js/build.min.js'
+      'js': 'js/build.min.js'
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('dist/'))
@@ -260,10 +260,10 @@ gulp.task('server:production', function () {
  */
 
 gulp.task('all:development', [
-    'hint:development',
-    'less:development',
-    'js:templates',
-    'js:development'
+  'hint:development',
+  'less:development',
+  'js:templates',
+  'js:development'
 ]);
 
 /**

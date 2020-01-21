@@ -1,21 +1,11 @@
 {
   "name": "southwest-gas",
   "version": "0.0.1",
-  "authors": [
-    "Edward Hotchkiss <edward@edwardhotchkiss.com>"
-  ],
+  "authors": ["Edward Hotchkiss <edward@edwardhotchkiss.com>"],
   "description": "southwest gas static page",
-  "moduleType": [
-    "globals"
-  ],
+  "moduleType": ["globals"],
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {
     "angular": "~1.3.8",
     "angular-route": "~1.3.8",

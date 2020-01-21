@@ -1,8 +1,8 @@
 
-angular.module('app.services.right_slide_mobile_menu', []).factory('MobileMenu', ['$window','$document','$rootScope','$log','$timeout', function($window, $document, $rootScope, $log, $timeout) {
-  
+angular.module('app.services.right_slide_mobile_menu', []).factory('MobileMenu', ['$window', '$document', '$rootScope', '$log', '$timeout', function ($window, $document, $rootScope, $log, $timeout) {
+
   return {
-    
+
     on: false,
     nav: null,
     body: null,

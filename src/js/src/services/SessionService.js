@@ -23,8 +23,8 @@
  * }]
  */
 
-angular.module('app.services.session_service', []).factory('SessionService', function($rootScope, $log, $cookies) {
-  
+angular.module('app.services.session_service', []).factory('SessionService', function ($rootScope, $log, $cookies) {
+
   $log.debug('SessionService(): loading');
 
   var _sessionService = {};

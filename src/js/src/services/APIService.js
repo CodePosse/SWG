@@ -1,5 +1,5 @@
 
-angular.module('app.services.api', []).factory('API', function($http) {
+angular.module('app.services.api', []).factory('API', function ($http) {
 
   'use strict';
 
@@ -7,11 +7,11 @@ angular.module('app.services.api', []).factory('API', function($http) {
 
   return {
 
-    get: function(endpoint, data) {
+    get: function (endpoint, data) {
       var URL = BASE_API_URL;
       return $http.jsonp(URL, data);
     }
-  
+
   };
 
 });

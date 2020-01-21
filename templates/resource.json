@@ -1,9 +1,6 @@
 {
   "default": {
-    "header": [
-      "<%= webprefix %>bootstrap.min.css",
-      "<%= webprefix %>app.css"
-    ],
+    "header": ["<%= webprefix %>bootstrap.min.css", "<%= webprefix %>app.css"],
     "footer": [
       "<%= webprefix %>jquery.min.js",
       "<%= webprefix %>angular.min.js",
@@ -14,7 +11,7 @@
     "header": [
       "<%= webprefix %>bootstrap.min.css",
       "<%= webprefix %>app.css",
-      "<%= webprefix %>dark.css"      
-    ]    
+      "<%= webprefix %>dark.css"
+    ]
   }
 }
