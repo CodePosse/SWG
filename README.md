@@ -1,6 +1,6 @@
 
 # SWG Homepage Redesign
-
+A little out of date
 This documentation's premise is to document the workings of the development process of the project, the build process for the project & patterns used throughout the project for future development by SWG.
 
 # Deliverables
