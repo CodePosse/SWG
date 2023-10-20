@@ -154,7 +154,7 @@ Set the log level in the environment variable LOG_LEVEL as your run the pubilsh 
 
 ## Support
 
-For any questions on publishing to Sites, please email Matthew Soh at <matthew.soh@swgas.com>.
+For any questions on publishing to Sites.
 
 sh to get more details into the build process. For example,
 
